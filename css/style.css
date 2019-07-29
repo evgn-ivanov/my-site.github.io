@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	background-color: #fff;
+}
+
+a {
+	display: inline-block;
+}
+
+.text-decoration-none {
+	text-decoration: none;
+}
+
+.section-title {
+	height: 550px;
+}
+
+.title-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	top: 150px;
+}
+
+.photo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-image: url(../img/photo.jpg);
+	background-size: cover;
+	box-shadow: 0px 20px 40px rgba(82, 98, 134, 0.4);
+	margin-bottom: 20px;
+}
+
+.online-bg {
+	position: relative;
+	width: 14px;
+	height: 14px;
+	top: 79px;
+	left: 79px;
+	border-radius: 7px;
+	background-color: #0CC65B;
+}
+
+.promo {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.subpromo {
+	display: inline;
+	font-size: 20px;
+	font-weight: 700;
+	color: #526286;
+	opacity: .4;
+}
+
+.social-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.social-media {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #526286;
+	opacity: .4;
+	padding: 10px;
+	transition: 300ms ease-out;
+}
+
+.social-media:nth-last-child(1) {
+	margin-right: 0;
+}
+
+.grid {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.colomn {
+	width: 47%;
+}
+
+.colomn:nth-child(1) {
+	margin-top: 30px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.img-block {
+	display: block;
+  position: relative;
+	width: 100%;
+	border-radius: 4px;
+  overflow: hidden;
+  padding: 0;
+  transition: all 500ms ease-out;
+}
+
+.img-block::before {
+	display: block;
+	padding-top: 100%; 
+	content: "";
+}
+
+.img-block--large::before {
+	padding-top: 130%; 
+}
+
+.img-block--small::before {
+	padding-top: 70%;
+}
+
+.img {
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+	background-position: center;
+	transition: all 500ms ease-out;
+}
+
+.title {
+	font-size: 16px;
+	text-align: center;
+	color: #000;
+	margin-top: 1.5vw;
+}
+
+.subtitle {
+	font-size: 14px;
+	text-align: center;
+	color: #9ea0a6;
+	margin-top: .5vw;
+	margin-bottom: 4vw;
+}
+
+@media screen and (min-width: 800px) {
+
+	.social-media:hover {
+		opacity: 1;
+		transform: translateY(-2px) scale(1.1);
+	}
+
+	.img-block:hover {
+		transform: scale(.98);
+	}
+
+	.img-block:hover .img {
+		transform: scale(1.1);
+	}
+
+	.img-block:active{
+		transform: scale(.9);
+	}
+}
