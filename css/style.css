@@ -18,6 +18,51 @@ a {
 	text-decoration: none;
 }
 
+
+.antodo {
+	color: #1B3F83;
+}
+
+.xlgo {
+	color: #26288E;
+}
+
+.bpworld {
+	color: #244555;
+}
+
+.p2d {
+	color: #2A436C;
+}
+
+.b2bxlgo {
+	color: #662D2D;
+}
+
+.biletik {
+	color: #363063;
+}
+
+.dev {
+	color: #533462;
+}
+
+.bank {
+	color: #4C4C4E;
+}
+
+.prosipanich {
+	color: #2C2C57;
+}
+
+.arcade {
+	color: #37435E;
+}
+
+.culture {
+	color: #3A4251;
+}
+
 .section-title {
 	height: 500px;
 }
@@ -144,14 +189,13 @@ a {
 .title {
 	font-size: 16px;
 	text-align: left;
-	color: #fff;
 }
 
 .subtitle {
 	font-size: 14px;
 	text-align: left;
-	color: #fff;
 	margin-top: 1.5vw;
+	opacity: .5;
 }
 
 @media screen and (min-width: 800px) {
