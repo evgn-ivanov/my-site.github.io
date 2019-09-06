@@ -144,6 +144,10 @@ a {
 	margin-bottom: 10vw;
 }
 
+.item-disable {
+	filter: grayscale(100%);
+}
+
 .img-block {
 	display: block;
   position: relative;
